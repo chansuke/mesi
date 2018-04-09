@@ -1,8 +1,14 @@
 import React from 'react';
+import MesiResultRow from './MesiResultRow';
 
-class MesiResults extends React.component {
+class MesiResults extends React.Component {
   render() {
-    return <div>this is MesiResults</div>;
+    return (
+      <React.Fragment>
+        this is MesiResults
+        <MesiResultRow />
+      </React.Fragment>
+    );
   }
 }
 
