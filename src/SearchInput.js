@@ -1,8 +1,11 @@
 import React from 'react';
 
 class SearchInput extends React.Component {
+  handleChange = () => {
+    console.log('Input the mesi');
+  };
   render() {
-    return <div>this is SearchInput</div>;
+    return <input onChange={this.handleChange} />;
   }
 }
 
