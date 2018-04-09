@@ -1,8 +1,8 @@
 import React from 'react';
 
 class SearchInput extends React.Component {
-  handleChange = () => {
-    console.log('Input the mesi');
+  handleChange = event => {
+    this.props.textChange(event);
   };
   render() {
     return <input onChange={this.handleChange} />;

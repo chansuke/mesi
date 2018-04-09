@@ -4,11 +4,15 @@ import SearchInput from './SearchInput';
 import MesiResults from './MesiResults';
 
 class App extends React.Component {
+  handleSearchChange = event => {
+    console.log('search input changed:', event.target.input);
+  };
+
   render() {
     return (
       <React.Fragment>
         <Header />
-        <SearchInput />
+        <SearchInput textChange={this.handleSearchChange} />
         <MesiResults
           mesiData={[
             {
