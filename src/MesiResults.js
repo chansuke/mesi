@@ -5,8 +5,7 @@ class MesiResults extends React.Component {
   render() {
     return (
       <React.Fragment>
-        this is MesiResults
-        <MesiResultRow />
+        <MesiResultRow title="this is mesi" />
       </React.Fragment>
     );
   }

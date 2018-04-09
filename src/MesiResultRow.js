@@ -2,8 +2,11 @@ import React from 'react';
 
 class MesiResultRow extends React.Component {
   render() {
-    return <div>this is mesiresultrow</div>;
+    return <React.Fragment>{this.props.title}</React.Fragment>;
   }
 }
 
+MesiResultRow.propTypes = {
+  title: React.PropTypes.string
+};
 export default MesiResultRow;
