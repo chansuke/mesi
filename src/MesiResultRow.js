@@ -6,7 +6,4 @@ class MesiResultRow extends React.Component {
   }
 }
 
-MesiResultRow.propTypes = {
-  title: React.PropTypes.string
-};
 export default MesiResultRow;

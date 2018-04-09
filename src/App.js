@@ -9,7 +9,19 @@ class App extends React.Component {
       <React.Fragment>
         <Header />
         <SearchInput />
-        <MesiResults />
+        <MesiResults
+          mesiData={[
+            {
+              title: 'Udon'
+            },
+            {
+              title: 'Curry'
+            },
+            {
+              title: 'Tonkatsu'
+            }
+          ]}
+        />
       </React.Fragment>
     );
   }
