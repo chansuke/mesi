@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import SearchInput from './SearchInput';
 import MesiResults from './MesiResults';
+import mesiList from './mesiList.json';
 
 class App extends React.Component {
   handleSearchChange = event => {
