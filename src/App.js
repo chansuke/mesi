@@ -2,11 +2,20 @@ import React from 'react';
 import Header from './Header';
 import SearchInput from './SearchInput';
 import MesiResults from './MesiResults';
-import mesiList from './mesiList.json';
+import filterMesi from './filterMesi';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filteredMesi: filterMesi('', 20),
+    };
+  }
+  
   handleSearchChange = event => {
-    console.log('search input changed:', event.target.input);
+    this.setState({
+      filteredMesi: filterMesi(event.target.value, 20),
+    })
   };
 
   render() {
@@ -15,17 +24,7 @@ class App extends React.Component {
         <Header />
         <SearchInput textChange={this.handleSearchChange} />
         <MesiResults
-          mesiData={[
-            {
-              title: 'Udon'
-            },
-            {
-              title: 'Curry'
-            },
-            {
-              title: 'Tonkatsu'
-            }
-          ]}
+          mesiData={this.state.filteredMesi}
         />
       </React.Fragment>
     );
