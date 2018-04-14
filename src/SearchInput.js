@@ -8,7 +8,7 @@ class SearchInput extends React.Component {
   render() {
     return (
       <div className="component-search-input">
-        <input onChange={this.handleChange} />;
+        <input onChange={this.handleChange} />
       </div>
     )
   }
