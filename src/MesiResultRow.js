@@ -1,8 +1,13 @@
 import React from 'react';
+import './MesiResultRow.css'
 
 class MesiResultRow extends React.Component {
   render() {
-    return <React.Fragment>{this.props.title}</React.Fragment>;
+    return (
+      <div className="component-mesi-result-row">
+        {this.props.title}
+      </div>
+    )
   }
 }
 
