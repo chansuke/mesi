@@ -4,7 +4,7 @@ import MesiResultRow from './MesiResultRow';
 class MesiResults extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="component-mesi-results">
         {this.props.mesiData.map(mesi => {
           return <MesiResultRow title={mesi.title} />;
         })}

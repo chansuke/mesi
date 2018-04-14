@@ -5,7 +5,11 @@ class SearchInput extends React.Component {
     this.props.textChange(event);
   };
   render() {
-    return <input onChange={this.handleChange} />;
+    return (
+      <div className="component-search-input">
+        <input onChange={this.handleChange} />;
+      </div>
+    )
   }
 }
 
