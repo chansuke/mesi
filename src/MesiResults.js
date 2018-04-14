@@ -1,5 +1,6 @@
 import React from 'react';
 import MesiResultRow from './MesiResultRow';
+import './MesiResults.css'
 
 class MesiResults extends React.Component {
   render() {
