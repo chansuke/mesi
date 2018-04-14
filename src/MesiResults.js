@@ -9,7 +9,7 @@ class MesiResults extends React.Component {
         {this.props.mesiData.map(mesi => {
           return <MesiResultRow title={mesi.title} />;
         })}
-      </React.Fragment>
+      </div>
     );
   }
 }

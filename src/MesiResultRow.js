@@ -6,7 +6,7 @@ class MesiResultRow extends React.Component {
     return (
       <div className="component-mesi-result-row">
         {this.props.title}
-      </div>;
+      </div>
     )
   }
 }
